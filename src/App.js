@@ -47,28 +47,32 @@ const App = forwardRef((prop, ref) => {
 
   return (
     <div className="App" ref={ref}>
-      <div className="todo-card col-lg-4 col-md-4 col-sm-12 offset-4">
+      <div className="todo-card col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-10 offset-sm-1 col-10 offset-1 mx-auto">
         <h1>ToDo List</h1>
         <form>
           <FormControl className="inputForm">
-            <div className="input-group">
-              <InputLabel htmlFor="my-input" className="inputLabel">
-                Add to the List
-              </InputLabel>
-              <Input
-                className="input"
-                id="my-input"
-                value={item}
-                onChange={(event) => setItem(event.target.value)}
-              />
-              <button
-                className="addButton"
-                disabled={!item}
-                type="submit"
-                onClick={addToTheLists}
-              >
-                <AddToPhotosIcon />
-              </button>
+            <div className="row">
+              <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                <InputLabel htmlFor="my-input" className="inputLabel">
+                  Add to the List
+                </InputLabel>
+                <Input
+                  className="input"
+                  id="my-input"
+                  value={item}
+                  onChange={(event) => setItem(event.target.value)}
+                />
+              </div>
+              <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <button
+                  className="addButton"
+                  disabled={!item}
+                  type="submit"
+                  onClick={addToTheLists}
+                >
+                  <AddToPhotosIcon />
+                </button>
+              </div>
             </div>
           </FormControl>
         </form>

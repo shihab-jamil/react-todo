@@ -10,7 +10,7 @@ h2 {
 
 .todo-card {
   background-color: whitesmoke;
-  width: 35%;
+  
   min-height: 600px;
   margin-top: 12vh;
   border-radius: 15px;
@@ -34,8 +34,8 @@ h1{
 }
 
 .input{
-  width: 25vw;
-  margin-left: 20px;
+  width: 20vw;
+  
 }
 
 .addButton{
